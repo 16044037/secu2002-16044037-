@@ -1,0 +1,10 @@
+
+mark: 4
+
+notes:
+-for task 1, my_join won't work for separators with more than one character
+ (like '***') since you're cutting off only last character
+-for task 4, code works but is pretty advanced. please see solutions for a
+ more appropriate way
+-for task 5, i appreciate the manual effort but you needed to solve the task
+ using programming. please see the solution 

@@ -35,6 +35,7 @@ def my_join(my_list,mysep):
     mystr=mystr[:-1]
     return mystr
 
+mysep = '***'
 print my_join(my_list,mysep)
 
 print '-------------'

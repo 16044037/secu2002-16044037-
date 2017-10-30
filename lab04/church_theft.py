@@ -1,7 +1,7 @@
 #Task 5
 '-*- coding: utf-8 -*-'
 
-f = open('/Users/paige/secu2002_-16044037-/Lab04/church_metal_theft.csv', 'r')
+f = open('church_metal_theft.csv', 'r')
 
 #Hypothesis1: Fewer crimes are commited in the winter months (December to February)
 #Hypothesis2: More crimes are committed in the summer months (June to August)
