@@ -63,17 +63,17 @@ print 'Returns the number of parts from lead roof thefts as', num_leadroof
 print '-------------'
 
 #To find the number of crimes which involve neither the theft of lead flashing or theft of part from lead roofs, we need to create sets
-#Set 1 states the number of lead thefts across the board
+#Set 1 states the number of lead thefts in total in the data
 s1 = set(lead_thefts)
 #Set 2 is the number of thefts of lead flashing
 s2 = set(leadflashing_thefts)
 #Set 3 is the number of thefts which involve the thefts of parts of lead roofs
 s3 = set(leadroof_theft)
 
-#We need to create a set union to join together the thefts of lead flashing and parts of lead roofs
+#We need to create a set union to join together the thefts of lead flashing and thefts of parts of lead roofs
 s4 = set(leadflashing_thefts) | set(leadroof_theft)
 
-#In order to find the number of crimes which involve neither of those, we need to find the difference between the set union and the number of thefts in general
+#In order to find the number of crimes which involve neither of those, we need to find the difference between the set union and the number of thefts in total
 s1.difference(s4)
 difference = len(s1.difference(s4))
 print 'CRIMES THAT INVOLVE NEITHER THE THEFT OF LEAD FLASHING OR THEFT OF PARTS FROM LEAD ROOFS:'
@@ -84,7 +84,7 @@ print '-------------'
 
 #Using Lambda, we are trying to find the thefts that involve stealing lead from roofs in the whole data set
 leadroof_theft = filter (lambda x: 'roof' in x, free_text_field)
-#This will tell us the number of thefts of parts from lead roofs
+#This will tell us the number of thefts of parts from lead roofs in the whole data set
 num_leadroof_details = len(leadroof_theft)
 print 'THEFTS OF PARTS FROM LEAD ROOFS IN WHOLE DATASET:'
 print 'The free text field details of all the lead roof thefts:', leadroof_theft
