@@ -6,7 +6,7 @@ mylist=[3,13,23,33,43]
 n = 23
 
 #LOOP_FILTER: when given a numeric list (mylist) and a number (n), returns the numbers in the list that are greater than n
-#Input: a list (mylist) and a value to filter it against (n)
+#Input: a list (mylist), i which represents the values in the list, and a value to filter it against (n)
 #Output: elements of the list that are greater than the value of n
 def loop_filter(mylist, n):
     for i in mylist:
