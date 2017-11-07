@@ -2,7 +2,7 @@
 
 #FAHRENHEIT: when asked to enter the temperature in Celsius, it returns it in Fahrenheit
 #Input: A prompt for the user to input the temperature in Celsius and the forumla to convert Celsius to Fahrenheit
-#Output: The temperature in Fahrenheitt
+#Output: The temperature in Fahrenheit
 def Fahrenheit():
     #This tells the function that we want to manually input the celsius when asked and uses a command statement to do so
     Celsius = float(raw_input("Enter the temperature in Celsius: "));
