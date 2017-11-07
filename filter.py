@@ -21,8 +21,10 @@ print '------------'
 #Task 2
 
 #Here we want to use lambda to filter instead of defining a function to do so
+#I want to store the new list as the filtered list and so I have used a statement to do this
 mylist=filter(lambda x : x > 23, mylist)
-
+#This will then test whether the new list has been sucessfully stored
+#It will also test whether the filter function has worked correctly
 print 'This should return 33 and 43'
 print 'Is returning\t',mylist
 
