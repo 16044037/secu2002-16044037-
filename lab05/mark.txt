@@ -1,0 +1,10 @@
+
+mark: 5
+
+notes:
+-in filter.py, instructions said to define the lambda part in a function.
+ could have done more testing
+-nice experimentation with raw_input in map.py
+-the code in church_theft.py looks very similar to that of another set of
+ students. please be more explicit about who you work with in the future
+-great commenting and testing throughout
