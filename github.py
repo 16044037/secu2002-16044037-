@@ -15,3 +15,13 @@ text = r.json()
 for i in range(0,len(text)):
     #This now means that we can print all of the commit messages
     print text[i]['commit']['message']
+
+print '----------------------'
+
+# In order to test whether this works with a different repository, I will test again using my own!
+# This should now show all the commits that have been made to my own repository
+r = requests.get('https://api.github.com/repos/16044037/secu2002_-16044037-/commits')
+commits = r.json()
+
+for i in range(0,len(commits)):
+    print commits[i]['commit']['message']
