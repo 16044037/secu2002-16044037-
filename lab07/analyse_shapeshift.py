@@ -37,3 +37,24 @@ print 'There are', len(ZEC), 'transactions involving the trading of ZEC to Bitco
 
 print '----------------------------------------------------------------'
 
+def add_to_dict(d,k,v):
+    if k in d:
+        existing_val = d[k]
+        new_val = existing_val + v
+        d[k] = new_val
+    else:
+        d[k] = v
+    return d
+
+print '---------------'
+
+dict_in={}
+dict_out={}
+
+for transaction in X:
+    curIn = transaction['curIn']
+    amount = transaction['amount']
+    curOut = transaction['curOut']
+    dict_in = add_to_dict(dict_in, curIn, amount)
+    dict_out = add_to_dict(dict_out, curOut, 1)
+
