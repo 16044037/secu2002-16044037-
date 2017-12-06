@@ -21,8 +21,8 @@ def create_row(columns):
 # input:    months (as list of ints)
 # output:   months (as list of strings)
 def pretty_month(months):
-    d = {01: 'January', 02: 'February', 03: 'March', 04: 'April', 05: 'May', 06: 'June',
-         07: 'July', 8: 'August', 9: 'September', 10: 'October', 11: 'November', 12: 'December'}
+    d = {1: 'January', 2: 'February', 3: 'March', 4: 'April', 5: 'May', 6: 'June',
+         7: 'July', 8: 'August', 9: 'September', 10: 'October', 11: 'November', 12: 'December'}
     pretty_months = []
     for m in months:
         if m in d:
@@ -286,10 +286,10 @@ plt.xlabel('Months', fontsize=7)
 # This then plots each month along the x axis
 plt.xticks(range(len(xaxis)), xaxis, fontsize=7, rotation=50)
 # This tells us what the y axis is for
-plt.ylabel('Number of crimes', fontsize=7)
+plt.ylabel('Number of thefts', fontsize=7)
 # This plots us our legend
 plt.legend(loc='best', fontsize=7)
 # This is the title of the bar chart
-plt.title('Number of lead crimes, copper crimes, and the total number of crimes that occurred in each month', fontsize=7)
+plt.title('Number of lead thefts, copper thefts, and the total number of thefts that occurred in each month', fontsize=7)
 # And this is how we save it!
 plt.savefig('months.pdf')
