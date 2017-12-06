@@ -280,16 +280,16 @@ yaxis_total = [7,11,11,19,8,5,13,18,12,9,12,5]
 # We then want to plot these three bars as such, and making adjustments for aesthetic reasons
 plt.bar(map(lambda x: x + 0.3, range(len(xaxis))), yaxis_copper, align='center', color='b', width=0.3, label='Number of copper thefts')
 plt.bar(map(lambda x: x + 0.1, range(len(xaxis))), yaxis_lead, align='center', color='r', width=0.3, label='Number of lead thefts')
-plt.bar(map(lambda x: x - 0.2, range(len(xaxis))), yaxis_total, align='center', color='g', width=0.3, label='Total number of thefts')
+plt.bar(map(lambda x: x - 0.2, range(len(xaxis))), yaxis_total, align='center', color='g', width=0.3, label='Total number of crimes')
 # This is then our x axis label
 plt.xlabel('Months', fontsize=7)
 # This then plots each month along the x axis
 plt.xticks(range(len(xaxis)), xaxis, fontsize=7, rotation=50)
 # This tells us what the y axis is for
-plt.ylabel('Number of thefts', fontsize=7)
+plt.ylabel('Number of crimes', fontsize=7)
 # This plots us our legend
 plt.legend(loc='best', fontsize=7)
 # This is the title of the bar chart
-plt.title('Number of lead thefts, copper thefts, and the total number of thefts that occurred in each month', fontsize=7)
+plt.title('Number of lead thefts, copper thefts, and the total number of crimes that occurred in each month', fontsize=7)
 # And this is how we save it!
 plt.savefig('months.pdf')
