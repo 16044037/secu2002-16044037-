@@ -1,0 +1,11 @@
+
+mark: 4
+
+notes:
+-should use a t-test to compare the means, not just a visual one
+-best to run the linear regression only once and then assign the slope and
+ intercept, as it's slow to run it twice
+-it's true that the code in church_theft.py isn't so elegant, but as you said
+ it gets the job done! feel free to check out the solutions for something
+ slightly cleaner
+-great clear commenting throughout

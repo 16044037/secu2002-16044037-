@@ -1,6 +1,7 @@
 # Task 5
 # Firstly, we need to open the file we want to work with and read it...
-f = open('/Users/paige/secu2002_master/data/church_metal_theft.csv','r')
+#f = open('/Users/paige/secu2002_master/data/church_metal_theft.csv','r')
+f = open('../../../../data/church_metal_theft.csv','r')
 
 # Firstly we need to copy over the solutions from Lab04 and 05 which are shown below...
 # CREATE_ROW: used to create dict-style row for spreadsheet
